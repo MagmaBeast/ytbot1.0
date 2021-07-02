@@ -12,7 +12,12 @@ import discord.ext
 from discord.ext import commands
 import time
 from discord.utils import get
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
+
+token = os.getenv('token')
 # //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 from pymongo import MongoClient, collation, collection, results                                                                      
 # /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -26,7 +31,7 @@ from discord.ext.commands import bot
 from googleapiclient.discovery import build
 
 # Create YouTube Object
-api = Api(api_key='AIzaSyC-lFsU6FJSFFr9lXlZ_H9Tm86TL2QnSuE')
+api = Api(api_key=token)
 TOKEN = "ODQzMzgxOTE4OTAzODI4NDkw.YKDCng.tTbGJEG_FfTMIwjPQsFKQxToq2Y"
 intents = discord.Intents.default()
 intents.members = True
