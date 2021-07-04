@@ -1,4 +1,4 @@
-
+# i know this shit aint needeed so ...........
 import discord
 
 from pyyoutube import Api
