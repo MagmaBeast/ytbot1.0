@@ -21,7 +21,7 @@ token = os.getenv('token')
 # //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 from pymongo import MongoClient, collation, collection, results                                                                      
 # /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-cluster = MongoClient("mongodb+srv://Armaan:Armaanmar2020*@cluster0.oqnly.mongodb.net/Ytbot?retryWrites=true&w=majority")    
+cluster = MongoClient("mongodb+srv://Armaan:password:)@cluster0.oqnly.mongodb.net/database_name?retryWrites=true&w=majority")    
 # ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 from discord import message
 from discord.ext.commands import bot
@@ -32,13 +32,13 @@ from googleapiclient.discovery import build
 
 # Create YouTube Object
 api = Api(api_key=token)
-TOKEN = "ODQzMzgxOTE4OTAzODI4NDkw.YKDCng.tTbGJEG_FfTMIwjPQsFKQxToq2Y"
+TOKEN = "uwu"
 intents = discord.Intents.default()
 intents.members = True
 
 
-# ser = serial.Serial('COM6', 9600)
-bot = commands.Bot(command_prefix ='y/',intents=intents)
+# ser = serial.Serial('COM6', 9600) ik this isnt needed but ok
+bot = commands.Bot(command_prefix ='y/',intents=intents) #i aint creating a dict for prefix :)
 
 @bot.command()
 async def link(ctx,arg):
@@ -124,7 +124,7 @@ async def stats(ctx, member: discord.Member=None):
          print("acc exist")
         
     youtube = build('youtube', 'v3',
-				developerKey='AIzaSyC-lFsU6FJSFFr9lXlZ_H9Tm86TL2QnSuE')
+				developerKey='smh_u faker :)')
 
     ch_request = youtube.channels().list(
 	part='statistics',
